@@ -37,6 +37,10 @@ const productos = [
     new Producto (24, 'Arbok', 300, 'Pokemon tipo veneno'),
     new Producto (25, 'Pikachu', 400, 'Pokemon tipo electrico'),
 ];
+const pokemonFuego = productos.filter(producto => producto.description.includes('fuego'));
+console.log(pokemonFuego);
+const productosPrecio = productos.filter(producto => producto.precio >= 200 && producto.precio <= 250);
+console.log(productosPrecio);
 //tomamos el div tipo container del html
 const productContainer = document.querySelector('#product-container');
 //div de la card, para dar forma
